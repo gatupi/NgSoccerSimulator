@@ -1,0 +1,31 @@
+<table class="main-table">
+    <thead>
+        <tr>
+            <th colspan="3">Standings</th>
+            <th>Played</th>
+            <th>Won</th>
+            <th>Drawn</th>
+            <th>Lost</th>
+            <th>GF</th>
+            <th>GA</th>
+            <th>GD</th>
+            <th>Points</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let team of teams; index as i" class="{{i <= 3 ? 'liberta' : (i >= 16 ? 'goes-down' : '')}}">
+            <td class="position">{{i+1}}</td>
+            <td class="team-logo"><img [src]="team.logo.path"></td>
+            <td class="team-name">{{team.name}}</td>
+            <td>{{team.MatchData.Played}}</td>
+            <td>{{team.MatchData.Won}}</td>
+            <td>{{team.MatchData.Drawn}}</td>
+            <td>{{team.MatchData.Lost}}</td>
+            <td>{{team.MatchData.GoalsFor}}</td>
+            <td>{{team.MatchData.GoalsAgainst}}</td>
+            <td>{{team.MatchData.GoalDifference}}</td>
+            <td class="points">{{team.MatchData.Points}}</td>
+        </tr>
+    </tbody>
+</table>

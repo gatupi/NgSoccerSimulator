@@ -1,0 +1,62 @@
+.main-table {
+    font-family: sans-serif;
+    font-size: 1.2em;
+    border-collapse: collapse;
+    margin: 20px;
+    background: #111;
+    color: #ccc;
+    font-weight: lighter;
+}
+
+.main-table .points {
+    font-weight: bold;
+    color: #fff;
+}
+
+.main-table th,
+td {
+    border: 1px solid #444;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.main-table th {
+    font-size: .7em;
+}
+
+.main-table tr:nth-child(4) td,
+tr:nth-child(16) td {
+    border-bottom: none;
+}
+
+.main-table tr:nth-child(5) td,
+tr:nth-child(17) td {
+    border-top-color: #aaa;
+    z-index: 3;
+}
+
+.main-table img {
+    height: 25px;
+    border: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.main-table .team-logo {
+    border-right: none;
+}
+
+.main-table .team-name {
+    text-align: left;
+    border-left: none;
+    padding-left: 0;
+    padding-right: 100px;
+}
+
+.main-table .liberta .position {
+    color: #fa0;
+}
+
+.main-table .goes-down .position {
+    color: #f04;
+}

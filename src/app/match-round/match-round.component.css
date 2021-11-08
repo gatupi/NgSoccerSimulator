@@ -1,0 +1,28 @@
+.round-box {
+    font-family: sans-serif;
+    border: 1px solid black;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background: lightcoral;
+}
+
+.round-box * {
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.round-box .round-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+}
+
+.round-title span {
+    margin: 0;
+}
+
+.round-box .match-box {
+    height: 50px;
+}
